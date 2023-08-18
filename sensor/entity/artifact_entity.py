@@ -50,5 +50,7 @@ class ModelEvaluationArtifact:
 
 @dataclass
 class ModelPusherArtifact:
+    saved_transformer_path: str
+    transformer_file_path: str
     saved_model_path: str
     model_file_path: str

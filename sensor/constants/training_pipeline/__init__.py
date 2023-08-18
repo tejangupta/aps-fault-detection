@@ -1,6 +1,7 @@
 import os
 
 SAVED_MODEL_DIR = os.path.join('saved_models')
+SAVED_TRANSFORMER_DIR = os.path.join('saved_transformers')
 
 # Defining common constatnt variables for a training pipeline
 TARGET_COLUMN = 'class'
@@ -60,5 +61,5 @@ MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE: float = 0.02
 MODEL_EVALUATION_REPORT_NAME = 'report.yaml'
 
 
+TRANSFORMER_PUSHER_DIR_NAME = 'transformer_pusher'
 MODEL_PUSHER_DIR_NAME = 'model_pusher'
-MODEL_PUSHER_SAVED_MODEL_DIR = SAVED_MODEL_DIR
