@@ -1,7 +1,7 @@
 # APS-Fault-Detection
 
 The data pipeline for this project can be found
-[here](https://github.com/tejangupta/Kafka-Sensor "Data Pipeline")
+[Kafka-Sensor](https://github.com/tejangupta/Kafka-Sensor "Data Pipeline")
 
 ### Problem Statement
 The Air Pressure System (APS) is a critical component of a heavy-duty vehicle that uses compressed air to force a piston to provide pressure to the brake pads, slowing the vehicle down. The benefits of using an APS instead of a hydraulic system are the easy availability and long-term sustainability of natural air.
@@ -48,7 +48,7 @@ Before we run the project, make sure that you are having MongoDB in your local s
 git clone https://github.com/tejangupta/aps-fault-detection.git
 ```
 
-### Step 2- Create a conda environment after opening the repository
+### Step 2: Create a conda environment after opening the repository
 
 ```bash
 conda create -p venv python=3.8 -y
@@ -58,48 +58,39 @@ conda create -p venv python=3.8 -y
 conda activate venv/
 ```
 
-### Step 3 - Install the requirements
+### Step 3: Install the requirements
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 4 - Export the environment variable
+### Step 4: Export the environment variable
 ```bash
-export AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
-
-export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
-
-export AWS_DEFAULT_REGION=<AWS_DEFAULT_REGION>
-
 export MONGODB_URL=<MONGODB_URL>
-
+export AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID>
+export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
+export AWS_DEFAULT_REGION=<AWS_DEFAULT_REGION>
 ```
 
-### Step 5 - Run the application server
+### Step 5: Run the application server
 ```bash
 python app.py
 ```
 
-### Step 6. Train application
+### Step 6: Train application
 ```bash
 http://localhost:8080/train
-
 ```
 
-### Step 7. Prediction application
+### Step 7: Prediction application
 ```bash
 http://localhost:8080/predict
-
 ```
 
 ## Run locally
-
 1. Check if the Dockerfile is available in the project directory
-
 2. Build the Docker image
 ```
 docker build --build-arg AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID> --build-arg AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY> --build-arg AWS_DEFAULT_REGION=<AWS_DEFAULT_REGION> --build-arg MONGODB_URL=<MONGODB_URL> . 
-
 ```
 
 3. Run the Docker image
@@ -110,13 +101,11 @@ docker run -d -p 8080:8080 <IMAGE_NAME>
 To run the project first execute the below commmand.
 
 Windows user
-
 ```
 MONGO_DB_URL=<MONGO_DB_URL>
 ```
 
 Linux user
-
 ```
 export MONGO_DB_URL=<MONGO_DB_URL>
 ```
