@@ -3,6 +3,10 @@
 The data pipeline for this project can be found
 [Kafka-Sensor](https://github.com/tejangupta/Kafka-Sensor "Data Pipeline")
 
+### Demo
+
+https://github.com/tejangupta/aps-fault-detection/assets/89571912/ca4fe3d5-2b5b-4046-8c72-81669f4c23a7
+
 ### Problem Statement
 The Air Pressure System (APS) is a critical component of a heavy-duty vehicle that uses compressed air to force a piston to provide pressure to the brake pads, slowing the vehicle down. The benefits of using an APS instead of a hydraulic system are the easy availability and long-term sustainability of natural air.
 
